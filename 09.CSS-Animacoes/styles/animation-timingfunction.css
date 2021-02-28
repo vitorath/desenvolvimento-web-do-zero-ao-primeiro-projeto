@@ -1,0 +1,41 @@
+@keyframes move {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: 900px;
+  }
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+
+  animation-name: move;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.d1 {
+  animation-timing-function: linear;
+}
+
+.d2 {
+  animation-timing-function: ease;
+}
+
+.d3 {
+  animation-timing-function: ease-in;
+}
+
+.d4 {
+  animation-timing-function: ease-out;
+}
+
+.d5 {
+  animation-timing-function: ease-in-out;
+}
+
