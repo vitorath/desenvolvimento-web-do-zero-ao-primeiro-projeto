@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporizador e Intervalos</title>
+  <script>
+
+    var numero = 0;
+    var interval;
+
+    function mudarCor() {
+      let h = document.getElementsByTagName("h1")[0];
+      h.style.color = "blue";
+    }
+
+    function atualizarTexto() {
+      let h = document.getElementsByTagName("h1")[0];
+      h.innerHTML += " " + numero;
+      numero += 1;
+    }
+
+    function mudarTexto() {
+      let h = document.getElementsByTagName("h1")[0];
+      h.innerHTML = "Novo Título";
+
+      window.setTimeout(mudarCor, 3000);
+      interval = window.setInterval(atualizarTexto, 3000);
+    }
+
+    function parar() {
+      window.clearInterval(interval);
+    }
+  </script>
+</head>
+<body>
+  <h1>Título</h1>
+  <input type="button" onclick="mudarTexto()" value="Mudar Texto">
+  <input type="button" onclick="parar()" value="Parar">
+</body>
+</html>

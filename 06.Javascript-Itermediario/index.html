@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .paragrafo {
+      color: red;
+    }
+
+    span {
+      display: none;
+    }
+
+    .button {
+      display: inline;
+      padding: 10px;
+      font-size: 2rem;
+      background-color: brown;
+      color: white;
+
+    }
+  </style>
+  <script>
+      function loaded() {
+        let t = document.getElementById('titulo');
+        // t.onclick = mudarText;
+        t.addEventListener("mouseover", mudarText);
+        t.addEventListener("mouseout", mouseOut);
+      }
+
+      function mudarText() {
+        this.innerHTML = "Novo Texto";
+      }
+
+      function mouseOut() {
+        this.innerHTML = "Mouse fora do elemento";
+      }
+  </script>
+</head>
+<body onload="console.log('Página completamente carregada'); loaded()">
+  <h1 id="titulo">Título</h1>
+  <p meuAttr="Vitor A Thomazini" class="paragrafo" id="paragrafoId">Parágrafo Id</p>
+  <p class="paragrafo">Parágrafo Class
+    <span>Outro texto</span>
+  </p>
+  <p>Parágrafo</p>
+
+  <h2>DOM Events</h2>
+  <h1 onclick="console.log(h1click())">Click em mim</h1>
+  <input 
+    type="text" 
+    onchange="changeColorH1(this)"
+    oninput="changeH1(this)"
+    >
+
+  <h2></h2>
+  <div 
+    onmouseover="onOver(this)" 
+    onmouseout="onOut(this)"
+    class="button"
+  >
+    Click
+  </div>
+
+  <p 
+    onmouseover="onOver(this)" 
+    onmouseout="onOut(this)"
+  >
+    Texto para teste
+  </p>
+
+  <div id="container">
+    <h1>Titulo</h1>
+    <p>Texto qualquer</p>
+  </div>
+
+  <div>
+    <h1 id="nome"></h1>
+    <input type="text" oninput="atualizar(this)">
+  </div>
+
+  <a href="sorteio.html">Sorteio</a>
+  <a href="timer.html">Timer e Intervalo</a>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
