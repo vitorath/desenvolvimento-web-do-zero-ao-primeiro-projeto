@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://picsum.photos/seed/picsum/200/300);
+  background-repeat: no-repeat; /* repeat-x, repeat-y */
+  background-position: center;
+}
+
+h1 {
+  color: #55ADAA;
+}
+
+p {
+  color: brown;
+}
+
+#principal {
+  color: rgb(0, 0, 200);
+  background-color: aqua;
+}
+
+.sub-div p {
+  color: blueviolet;
+}
+
+.texto-verde {
+  color: rgb(50, 110, 0, 0.3);
+
+  /* background: color image position/size repeat origin clip attachment initial|inherit */
+  background-image: url(https://picsum.photos/id/237/200/300);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* padrão é scroll */
+}
+
+#cm {
+  background-color: blueviolet;
+  width: 1cm;
+  height: 1cm;
+}
+
+#mm {
+  background-color: blue;
+  width: 1mm;
+  height: 1mm;
+}
+
+#in {
+  background-color: goldenrod;
+  width: 1in;
+  height: 1in;
+}
+
+#px {
+  background-color: red;
+  width: 10px;
+  height: 10px;
+}
+
+#pt {
+  background-color: cornflowerblue;
+  width: 10pt;
+  height: 10pt;
+}
+
+#pc { /*1pc = 10pt*/
+  background-color: coral;
+  width: 10pc; 
+  height: 10pc;
+}
+
+.container {
+  font-size: 25px;
+
+  width: 300px;
+  background-color: darkgoldenrod;
+}
+
+.inside {
+  font-size: 2em; /* em - Relativa ao tamnho da fonte que está sendo aplicado naquele elemento */
+
+  width: 3em; /* 25px x 2 x 3 = 150px */
+  /* width: 150px; */
+  background-color: darkgreen;
+}
+
+html {
+  font-size: 20px;
+}
+
+.container2 {
+  font-size: 25px;
+}
+
+.inside2 {
+  font-size: 2rem; /* em - Relativa ao tamnho da fonte do elemento raiz,no caso (html) */
+}
+
+.container3 {
+  width: 50vw; /* vw - Largurada da tela, no caso 50% da tela */
+  height: 10vh; /* vh - Altura da tela, no caso 50% da tela */
+  background-color: cadetblue;
+}
+
+.inside3 {
+  width: 100px;
+  background-color: darkorchid;
+}
+
+.container4 {
+  width: 50vmax; /* vmax - Maior valor entre largura e altura da tela */ 
+  height: 20vmin; /* vmin - Menor valor entre largura e altura da tela */
+  background-color: cadetblue;
+}
+
+.inside4 {
+  width: 93.33%; /* % - Sempre referente ao tamanho pai*/
+  background-color: darkorchid;
+}
+
+#base {
+  height: 10px;
+  background-color: cornflowerblue;
+}
+
+#container {
+  background-color: darkorange;
+  color: white;
+  margin: 10px;
+}
+
+#base2 {
+  height: 10px;
+  background-color: cornflowerblue;
+}
+
+#container2 {
+  background-color: darkorange;
+  color: white;
+  padding: 10px;
+}
+
+.borda {
+  border-width: 5px;
+  border-style: solid;
+  border-color: chocolate;
+  border-radius: 5px;
+  /* border: espessura estilo cor;
+  /* qualquer proprieda: top right bottom left*/
+}
+
+.quadrado {
+  width: 100px;
+  height: 100px;
+  background-color: darkslategrey;
+
+  border-radius: 50%;
+}
+
+.dotted {border-top-style: dotted; border-top-color: chartreuse;}
+.dashed {border-bottom-style: dashed;}
+.solid {border-top-style: solid;}
+.none {border-left-style: none;}
+.hidden {border-right-style: hidden;}
+
+.box-container {
+  background-color: red;
+  padding: 5px;
+  border: 5px solid blue;
+  margin: 10px;
+
+  width: 300px;
+}
+
+.box-conteudo {
+  background-color: #DDD;
+  border:5px solid blue;
+  outline: 5px solid green; /* Não é contabilizado no Box Model */
+  margin: 5px;
+  padding: 5px;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.text {
+  color: crimson;
+  text-align: justify;
+  text-transform: capitalize;
+  text-indent: 35px;
+  text-decoration: line-through overline underline;
+  letter-spacing: 1.2px; /* Pode receber valores negativos */
+  line-height: 1.5rem;
+  word-spacing: 10px;
+  text-shadow: 1px 1px darkblue; /* deslocamento direita, deslocamento baixo e sombra */
+}
+
+a {
+  text-decoration: none;
+}
+
+.font {
+  font-family: "Comic Sans MS", sans-serif;
+  font-style: italic;
+  font-size: 35px;
+  font-weight: 600; /* Depende da familia da fonte dois valores podem ter o mesmo efeito */
+  font-variant: small-caps;
+}
+
+h1 {
+  font-family: 'Architects Daughter';
+}
+
+h2 {
+  font-family: 'Rock Salt';
+}
+
+.links {
+  text-decoration: none;
+  color: #bc2035;
+  cursor: pointer;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  border: 2px solid #bc2035;
+}
+
+.links:visited {
+  color: #DDD;
+  border-color: #DDD;
+}
+
+.links:hover {
+  color: white;
+  background: #bc2035;
+  border: 2px solid #bc2035;
+}
+
+.links:active {
+  color: white;
+  background: blueviolet;
+  border: 2px solid blueviolet;
+}
+
+ul {
+  /* list-style-type: square; */
+  list-style-image: url("../assets/check.png");
+  list-style-position: inside;
+  margin: 0;
+  padding: 10px;
+  background-color: #f3f;
+}
+
+ol {
+  list-style-type: upper-alpha;
+  list-style-position: inside;
+  margin: 0;
+  padding: 10px;
+  background-color: #59f;
+}
+
+li {
+  border: 1px solid;
+  background-color: bisque;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+}
+

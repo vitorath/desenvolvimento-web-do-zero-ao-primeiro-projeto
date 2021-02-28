@@ -1,0 +1,241 @@
+<!-- Fontes - https://fonts.google.com/ -->
+<!-- Visualizar fontes - https://www.fontsquirrel.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS</title>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rock+Salt&display=swap" rel="stylesheet">
+  <style>
+    p {
+      color: red;
+    }
+
+    @font-face {
+      font-family: "Jelly Belty";
+      src: url(fonts/Jelly_Belty.ttf);
+    }
+
+    h3 {
+      font-family: "Jelly Belty";
+      font-size: 35px;
+    }
+  </style>
+
+</head>
+<body>
+  <!-- Order de prioridade do CSS: inline -> interno -> externo -->
+  <h1>CSS - Básico</h1>
+
+  <a href="#principal">Link para o principal</a>
+
+  <p style="color: blueviolet;">
+    It is a long established fact that a reader will be distracted by the readable 
+    content of a page when looking at its layout. The point of using Lorem Ipsum is 
+    that it has a more-or-less normal distribution of letters, as opposed to using 
+    'Content here, content here', making it look like readable English. Many desktop 
+    publishing packages and web page editors now use Lorem Ipsum as their default model 
+    text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+    Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
+    (injected humour and the like).
+  </p> 
+
+  <p>
+    It is a long established fact that a reader will be distracted by the readable 
+    content of a page when looking at its layout. The point of using Lorem Ipsum is 
+    that it has a more-or-less normal distribution of letters, as opposed to using 
+    'Content here, content here', making it look like readable English. Many desktop 
+    publishing packages and web page editors now use Lorem Ipsum as their default model 
+    text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+    Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
+    (injected humour and the like).
+  </p> 
+
+  <!-- id -  pode ter um unico com mesmo nome por página. O id pode ser utilizado como link -->
+  <a href="#principal">Link para o principal</a>
+
+  <p id="principal">
+    It is a long established fact that a reader will be distracted by the readable 
+    content of a page when looking at its layout. The point of using Lorem Ipsum is 
+    that it has a more-or-less normal distribution of letters, as opposed to using 
+    'Content here, content here', making it look like readable English. Many desktop 
+    publishing packages and web page editors now use Lorem Ipsum as their default model 
+    text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+    Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
+    (injected humour and the like).
+  </p> 
+
+  <!-- class -  pode ter mais de um com mesmo nome por página -->
+  <p class="texto-verde">
+    It is a long established fact that a reader will be distracted by the readable 
+    content of a page when looking at its layout. The point of using Lorem Ipsum is 
+    that it has a more-or-less normal distribution of letters, as opposed to using 
+    'Content here, content here', making it look like readable English. Many desktop 
+    publishing packages and web page editors now use Lorem Ipsum as their default model 
+    text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+    Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
+    (injected humour and the like).
+  </p>
+
+  <p class="texto-verde">
+    It is a long established fact that a reader will be distracted by the readable 
+    content of a page when looking at its layout. The point of using Lorem Ipsum is 
+    that it has a more-or-less normal distribution of letters, as opposed to using 
+    'Content here, content here', making it look like readable English. Many desktop 
+    publishing packages and web page editors now use Lorem Ipsum as their default model 
+    text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+    Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
+    (injected humour and the like).
+  </p>
+
+  <!-- div não tem significado -->
+  <div class="texto-verde">
+    <p>
+      It is a long established fact that a reader will be distracted by the readable 
+      content of a page when looking at its layout. The point of using Lorem Ipsum is 
+      that it has a more-or-less normal distribution of letters, as opposed to using 
+      'Content here, content here', making it look like readable English. Many desktop 
+      publishing packages and web page editors now use Lorem Ipsum as their default model 
+      text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+      Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
+      (injected humour and the like).
+    </p>
+    <div class="sub-div">
+      <p>
+        It is a long established fact that a reader will be distracted by the readable 
+        content of a page when looking at its layout. The point of using Lorem Ipsum is 
+        that it has a more-or-less normal distribution of letters, as opposed to using 
+        'Content here, content here', making it look like readable English. Many desktop 
+        publishing packages and web page editors now use Lorem Ipsum as their default model 
+        text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+        Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
+        (injected humour and the like).
+      </p> 
+    </div>
+  </div>
+  <h2>Unidade de medida (fixas)</h2>
+  <div id="cm"></div>
+  <div id="mm"></div>
+  <div id="in"></div>
+  <div id="px"></div>
+  <div id="pt"></div>
+  <div id="pc"></div>
+  <h2>Unidade de medida (relativas)</h2>
+  <h4>em</h4>
+  Texto no body
+  <div class="container">
+    Texto no container
+    <div class="inside">
+      Texto no inside
+    </div>
+  </div>
+
+  <br>
+  <h4>rem</h4>
+  Texto no body
+  <div class="container2">
+    Texto no container
+    <div class="inside2">
+      Texto no inside
+    </div>
+  </div>
+
+  <br>
+  <h4>vw (view width) & vh (view height)</h4>
+  <div class="container3">
+    Texto no container
+    <div class="inside3">
+      Texto no inside
+    </div>
+  </div>
+
+  <br>
+
+  <h4>vmax (view max), vmin (view min) e % (percentage)</h4>
+  <div class="container4">
+    Texto no container
+    <div class="inside4">
+      Texto no inside
+    </div>
+  </div>
+
+  <h2>Margin e Padding</h2>
+  <div id="base"></div>
+  <div id="container">
+    <div id="conteudo">
+      Texto qualquer
+    </div>
+  </div>
+  Outro texto
+
+  <h2>Padding</h2>
+  <div id="base2"></div>
+  <div id="container2">
+    <div id="conteudo2">
+      Texto qualquer
+    </div>
+  </div>
+  Outro texto
+
+  <h2>Border</h2>
+  <div class="borda">
+    Conteúdo
+  </div>
+
+  <div class="quadrado borda dotted none hidden dashed"></div>
+
+  <h2>Border Box</h2>
+  <div class="box-container">
+    <div class="box-conteudo">
+      Conteúdo
+    </div>
+  </div>
+
+  <h3>Box Sizing</h3>
+  <div class="box-container border-box">
+    <div class="box-conteudo">
+      Conteúdo
+    </div>
+  </div>
+
+  <h2>Textos</h2>
+  <p class="text">
+    There are many variations of passages of Lorem Ipsum available, but the majority have 
+    suffered alteration in some form, by injected humour, or randomised words which don't 
+    look even slightly believable. If you are going to use a passage of Lorem Ipsum, you 
+    need to be sure there isn't anything embarrassing hidden in the middle of text. 
+    All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks 
+    as necessary, making this the first true generator on the Internet. It uses a dictionary 
+    of over 200 Latin words, combined with a handful of model sentence structures, to generate 
+    Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from 
+    repetition, injected humour, or non-characteristic words etc.
+  </p>
+
+  <h2>Fontes</h2>
+  <p class="font">
+    There are many variations of passages of Lorem Ipsum available, but the majority have 
+    suffered alteration in some form, by injected humour, or randomised words which don't 
+    look even slightly believable. If you are going to use a passage of Lorem Ipsum, you 
+    need to be sure there isn't anything embarrassing hidden in the middle of text. 
+    All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks 
+    as necessary, making this the first true generator on the Internet. It uses a dictionary 
+    of over 200 Latin words, combined with a handful of model sentence structures, to generate 
+    Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from 
+    repetition, injected humour, or non-characteristic words etc.
+  </p>
+
+  <a class="links" href="#">Cadastrar</a>
+  <h2>Listas</h2>
+  <ul>
+    <a href="#"><li>Item 1</li></a>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+</body>
+</html>
