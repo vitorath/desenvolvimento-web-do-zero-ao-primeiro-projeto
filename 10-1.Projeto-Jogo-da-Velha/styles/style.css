@@ -1,0 +1,46 @@
+/* https://emojipedia.org */
+body {
+  text-align: center;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  border: 1px solid gray;
+  display: inline-block;
+}
+
+.playerA {
+  position: relative;
+}
+
+.playerA:after {
+  position: absolute;
+  content: '\1F34F';
+  font-size: 50px;
+  line-height: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.playerB {
+  position: relative;
+}
+
+.playerB:after {
+  position: absolute;
+  content: '\1F336';
+  font-size: 50px;
+  line-height: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
