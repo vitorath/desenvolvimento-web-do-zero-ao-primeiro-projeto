@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Deixar a página responsiva -->
+  <meta name="viewport" content="width=device-width, initial-scalte=1.0">
+  <title>CSS-Intermediário</title>
+
+  <style type="text/css">
+    body {
+      font-size: 1.2rem;
+    }
+
+    #container {
+      color: black;
+      background-color: coral;
+      width: 100px;
+      height: 100px;
+
+      /* overflow: visible; Aparece o conteúdo fora do container (default) */
+      /* overflow: hidden; Oculta conteudo fora do container */
+      /* overflow: scroll; Adiciona scroll X e Y */
+      /* overflow: auto;  Adicona scroll se precisar */
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+
+    #quadrado {
+      width: 50px;
+      height: 50px;
+      background-color: brown;
+
+      margin: auto; /* centraliza horizontalmente */
+    }
+    
+    #img-alinhamento {
+      display: block;
+      margin-left: auto; /* posiciona a direita */
+    }
+
+    #container-alinhamento-horizontal {
+      text-align: center;
+    }
+
+    .quadrado-position {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+
+      top: 15px;
+      left: -15px;
+    }
+
+    .retangulo-position {
+      width: 150px;
+      height: 500px;
+      margin-top: 10px;
+    }
+
+    .ret {
+      overflow:auto;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 0;
+    }
+
+    .static {
+      position: static;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .fixed {
+      position: fixed;
+    }
+
+    .absolute {
+      position: absolute;
+    }
+
+    .bg-red {
+      background-color: red;
+    }
+
+    .bg-blue {
+      background-color: blue;
+    }
+
+    .bg-green {
+      background-color: green;
+    }
+
+    .img-float1 {
+      float: left;
+    }
+
+    .img-float2 {
+      float: right;
+    }
+
+    .p-float {
+      /* clear: left; Elimina flutuação both: ambos, left: esquerda, right: direita, none: nenhum (default) */
+    }
+
+    .div-float {
+      padding: 10px;
+      background-color: cornflowerblue;
+      border: 1px solid black;
+      overflow: auto; /* Encapsular os items floats dentro da tag */
+    }
+
+    .menu-float {
+      list-style: none;
+    }
+
+    .menu-float li {
+      float: right;
+      padding: 10px;
+      background-color: darkgray;
+      margin: 5px;
+    }
+
+    .card {
+      position: relative;
+      float: left;
+      width: 400px;
+      height: 200px;
+      border: 1px solid green;
+    }
+
+    .c1 {
+      background-color: brown;
+      height: 100%;
+      line-height: 200px;
+    }
+
+    .c2 {
+      position: absolute; /* Remove os efeitos do text-aline */
+      top: 50%;
+      left: 50%;
+      background-color: cornflowerblue;
+
+      transform: translate(-50%, -50%);
+    }
+
+    .card2 {
+      clear: left;
+      float: left;
+      border: 2px solid green;
+      padding-left: 150px;
+      padding-right: 150px;
+      padding-bottom: 100px;
+      padding-top: 100px;
+    }
+
+    .header {
+      position: relative;
+      margin: auto;
+      width: 80%;
+      height: 100px;
+      background-color: gray;
+    }
+
+    .content {
+      position: absolute;
+
+      width: 70%;
+      height: 70%;
+      background-color: blueviolet;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      text-align: center;
+      font-size: 6vw;
+    }
+
+  </style>
+</head>
+<body>
+  <h2>Display</h2>
+  <!--
+    * não utilizar elemento block dentro de um parágrafo
+    * o display block pode alterar as dimensões, já o inline não
+    * inline-block tem caracteristica do display inline e do block
+    * display none oculta a tag, já o visibility oculta mas considera o espaço ocupado
+    * display inline-block não funciona margin: auto
+    elemento  display       default-properties
+    p         block         margin
+    div       block
+    span      inline
+    img       inline-block
+
+    css       properties                description
+    static                              posição original (default)
+    relative  top, bottom, right, left  relativa a posição original
+    fixed     top, bottom, right, left  relativo a janela
+    absolute  top, bottom, right, left  relativa ao pai do elemento(não sendo static)
+    sticky    top, bottom, right, left  mantém na tela de acordo que as propriedades
+  -->
+  <div style="background-color: coral;">
+    <div>Esta pe uma DIV normal</div>
+    <div>
+      E aqui a história <div style="background-color: brown; width: 500px;">DIV de dentro</div> continua
+    </div>
+  </div>
+
+  <div>
+    <p style="margin: 0;">Este é um parágrafo normal</p>
+    <p style="margin: 0;">E aqui a história continua</p>
+  </div>
+
+  <p>
+    Aqui eu tenho o início de um parágrafo <span style="background-color: cornflowerblue;width: 500px;display: inline-block;">um span no meio</span> e o fim do parágrafo.
+  </p>
+
+  <p style="background-color: coral;">
+    Aqui eu tenho o início de um parágrafo <div style="background-color: brown;">um div no meio</div> e o fim do parágrafo.
+  </p>
+
+  <p>
+    Aqui eu tenho o início de um parágrafo <img style="display: none;" src="image/3-200x300.jpg"/> e o fim do parágrafo.
+  </p>
+
+  <h2>Overflow</h2>
+
+  <div id="container">
+    <img src="/image/3-200x300.jpg" alt="">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </div>
+
+  <h2>Alinhamento Horizontal</h2>
+  <div id="quadrado"></div>
+  <img id="img-alinhamento" src="/image/3-200x300.jpg" alt="">
+  <div id="container-alinhamento-horizontal">
+    <img src="/image/3-200x300.jpg" alt="">
+  </div>
+
+  <h2>Position</h2>
+
+  <div class="quadrado-position bg-blue static"></div>
+  <div class="quadrado-position bg-red relative"></div>
+
+  <div class="retangulo-position bg-blue relative">
+    <div class="quadrado-position bg-red absolute"></div>
+    <div class="quadrado-position bg-green absolute"></div>
+  </div>
+
+  <div class="bg-blue retangulo-position ret">
+    <div class="quadrado-position bg-red"></div>
+    <div class="quadrado-position bg-green sticky"></div>
+    <div class="quadrado-position bg-red"></div>
+    <div class="quadrado-position bg-red"></div>
+    <div class="quadrado-position bg-red"></div>
+    <div class="quadrado-position bg-red"></div>
+    <div class="quadrado-position bg-red"></div>
+    <div class="quadrado-position bg-red"></div>
+    <div class="quadrado-position bg-red"></div>
+    <div class="quadrado-position bg-red"></div>
+    <div class="quadrado-position bg-red"></div>
+    <div class="quadrado-position bg-red"></div>
+    <div class="quadrado-position bg-red"></div>
+  </div>
+
+  <h2>Float</h2>
+  <div class="div-float">
+    <img class="img-float1" src="image/3-200x300.jpg" alt="">
+    <img class="img-float2" src="image/3-200x300.jpg" alt="">
+    <p class="p-float">Texto qualquer Texto qualquer</p>
+  </div>
+
+  <ul class="menu-float">
+    <li>Home</li>
+    <li>Cursos</li>
+    <li>Contato</li>
+  </ul>
+
+  <br>
+  <h2>Responsividade</h2>
+  <div class="header">
+    <div class="content">
+      Hello World
+    </div>
+  </div>
+
+  <br>
+  <h2>Alinhamento Vertical</h2>
+  <div class="card">
+    <div class="c1">
+      Vitor A Thomazini
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="c2">
+      Vitor A Thomazini
+    </div>
+  </div>
+
+  <div class="card2">
+    <div style="background-color: blueviolet;">
+      Vitor A Thomazini
+    </div>
+  </div>
+
+
+
+</body>
+</html>

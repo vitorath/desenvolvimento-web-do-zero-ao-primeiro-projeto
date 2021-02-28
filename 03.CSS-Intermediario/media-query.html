@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-size: 1.2rem;
+    }
+
+    .header {
+      overflow: hidden;
+      margin: auto;
+      width: 80%;
+      background-color: #5C57A4;
+      padding: 16px;
+      font-size: 24px;
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      float: right;
+    }
+
+    li {
+      float: left;
+      color: white;
+      margin-right: 16px;
+    }
+
+    .logo {
+      float: left;
+      color: white;
+    }
+
+    @media screen and (max-width: 456px) {
+      
+      .header {
+        float: none;
+        text-align: center;
+      }
+
+      .menu {
+        margin-top: 24px;
+        float: none;
+        text-align: center;
+      }
+
+      li {
+        float: none;
+        margin-bottom: 8px;
+        padding: 8px;
+      }
+
+      .logo {
+        float: none;
+        text-align: center;
+      }
+
+    }
+
+    @media screen and (min-width: 756px) {
+        
+      .header {
+        background-color: gray;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      Logo
+    </div>
+    <ul class="menu">
+      <li>Home</li>
+      <li>Cursos</li>
+      <li>Contato</li>
+    </ul>
+  </div>
+</body>
+</html>
