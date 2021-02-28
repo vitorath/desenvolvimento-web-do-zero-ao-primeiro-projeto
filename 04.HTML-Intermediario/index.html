@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Intermediário</title>
+</head>
+<body>
+  <!-- Consultar tags compatibilidade: https://caniuse.com/ -->
+  <!-- Method: GET ou POST-->
+  <h2>Formulários</h2>
+  <form method="GET" action="https://www.youtube.com/results">
+    <input type="text" name="search_query">
+    <input type="password" name="senha">
+    <input type="submit">
+  </form>
+
+  <form method="GET" action="">
+    <input type="text" name="email">
+    <br>
+    <input type="password" name="senha">
+    <br>
+    <input type="checkbox" name="curso" value="op1">React Native
+    <br>
+    <input type="checkbox" name="curso" value="op2">React JS
+    <br>
+    <!-- radio deve ter o mesmo name para agrupar a seleção -->
+    <input type="radio" name="genero" value="m" checked>Masculino
+    <br>
+    <input type="radio" name="genero" value="f">Feminino
+    <br>
+    <!-- select é enviado o value após o submit -->
+    <select name="estado" size="3" multiple>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="SP" selected>São Paulo</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="SP" selected>São Paulo</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="SP" selected>São Paulo</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="SP" selected>São Paulo</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="SP" selected>São Paulo</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="SP" selected>São Paulo</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="SP" selected>São Paulo</option>
+    </select>
+    <br>
+    <textarea name="mensagem" cols="30" rows="10"></textarea>
+    <br>
+    <input type="color" name="cor">
+    <br>
+    <input type="date" name="data" max="2020-12-31" min="2019-12-31">
+    <br>
+    <input type="datetime-local" name="datetime-local">
+    <br>
+    <!-- file o method deve ser POST -->
+    <input type="file" name="arquivo">
+    <br>
+    <input type="number" name="numerico" min="5" max="10">
+    <br>
+    <input type="range" name="intervalo" min="5" max="10" value="6">
+    <br>
+    <!-- tel no celular aparece teclado numérico no telefone-->
+    <input type="tel" name="telefone">
+    <br>
+    <input type="email" name="email">
+    <br>
+    <input type="reset" value="Limpar">
+    <input type="submit" value="Enviar">
+  </form>
+
+  <h2>Tags semânticas HTML5</h2>
+  <header class="header">
+    <h2>Logo</h2>
+    <nav class="nav">
+      <ul class="menu"></ul>
+    </nav>
+  </header>
+  <!-- Main deve ter somente uma vez por página -->
+  <main>
+    <!-- Não existe uma regra bem definida -->
+    <section></section>
+    <!-- Deve ser utilizada sempre quando o conteudo faça sentido (mesmo sentido) em qualquer lugar -->
+    <article></article>
+  </main>
+  <footer></footer>
+</body>
+</html>
