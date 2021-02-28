@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles/seletores.css">
+</head>
+<body>
+  <h1>Seletores</h1>
+
+  <p>Após Extra 1</p>
+
+  <div id="container1">
+    <h1 titulo="titulo 1" width=300>Título 1</h1>
+    <h2 titulo="titulo 2">Título 2</h2>
+    <h3>Título 3</h3>
+    <h4 width=500>Título 4</h4>
+    <h5 titulo="text 1">Título 5</h5>
+    <h6>Título 6</h6>
+  </div>
+  <p>Após Extra 2</p>
+  <header>
+    <p>Parágrafo 1</p>
+    <p>Parágrafo 2</p>
+    <section>
+      <p>Parágrafo 3</p>
+      <p>Parágrafo 4</p>
+    </section>
+    <p class="p2">Parágrafo 5</p>
+    <p>Parágrafo 6</p>
+  </header>
+  <p>Após Extra 3</p>
+  <p>Após Extra 4</p>
+  <p>Após Extra 5</p>
+
+  <div>
+    <p>Parágrafo 1</p>
+    <p>Parágrafo 2</p>
+    <p>Parágrafo 3</p>
+    <p>Parágrafo 4</p>
+    <p>Parágrafo 5</p>
+    <p>Parágrafo 6</p>
+  </div>
+  <p>Após Extra 6</p>
+  <p>Após Extra 7</p>
+  <script>
+    let titulo = document.querySelector("[titulo]");
+    console.log(titulo);
+
+    let titulos = document.querySelectorAll("[titulo*=tu]");
+    console.log(titulos);
+  </script>
+</body>
+</html>m

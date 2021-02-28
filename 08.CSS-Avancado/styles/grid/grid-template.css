@@ -1,0 +1,26 @@
+.container {
+  color: white;
+  display: grid;
+  padding: 10px;
+  background-color: gray;
+
+  /* grid-template-rows: 200px auto;
+  grid-template-columns: 1fr 3fr 1fr; /*10% 150px auto*/
+
+  grid-template: auto 2fr 1fr / 1fr 3fr;
+}
+
+.r1 {
+  background-color: red;
+}
+
+.r2 {
+  background-color: blue;
+}
+
+.r3 {
+  background-color: green;
+}
+
+.rect {
+}

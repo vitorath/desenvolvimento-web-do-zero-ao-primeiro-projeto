@@ -1,0 +1,28 @@
+.container {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center; /* flex-star, flex-end, center, space-between, space-around, space-evenly */
+  align-items: flex-end; /* stretch, flex-start, flex-end, center */
+
+  background-color: darkgrey;
+  height: 400px;
+  color: white;
+}
+
+.r1 {
+  background-color: red;
+}
+
+.r2 {
+  background-color: blue;
+}
+
+.r3 {
+  background-color: green;
+}
+
+.rect {
+  width: 150px;
+  height: 100px;
+}

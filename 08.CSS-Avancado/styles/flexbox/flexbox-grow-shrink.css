@@ -1,0 +1,27 @@
+.container {
+  display: flex; 
+  
+  background-color: darkgrey;
+  height: 400px;
+  color: white;
+}
+
+.r1 {
+  background-color: red;
+}
+
+.r2 {
+  flex-grow: 1; /* 0 - não aumenta, > 0x - aumenta */
+  background-color: blue;
+}
+
+.r3 {
+  flex-grow: 2;
+  flex-shrink: 0; /* 1 - encolhe, 0 - não encolhe */
+  background-color: green;
+}
+
+.rect {
+  width: 150px;
+  height: 100px;
+}

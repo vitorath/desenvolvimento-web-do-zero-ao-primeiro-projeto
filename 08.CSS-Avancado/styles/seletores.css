@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+}
+
+div, .p2 {
+  background-color: green;
+}
+
+.container1 p {
+  background-color: crimson;
+}
+
+header > p {
+  background-color: darkblue;
+}
+
+header ~ p {
+  background-color: deeppink;
+}
+
+header + p {
+  background-color: blueviolet;
+}
+
+[width] {
+  color: darkred
+}
+
+[width="500"] {
+  color: darkgoldenrod
+}
+
+[titulo~="titulo"] {
+  font-size: 42px;
+  font-weight: 900;
+}
+
+[titulo~="titulo"] { /* Todos as tags com atributo titulo e que contém "titulo" como valor */
+  font-size: 42px;
+  font-weight: 900;
+}
+
+[titulo^="t"] { /* Totos as tas com atributo titulo e que iniciam com "t"  */
+  color: darkslateblue;
+  font-weight: 900;
+}
+
+[titulo$="1"] { /* Totos as tas com atributo titulo e que teminam com "1"  */
+  color: coral;
+  font-weight: 900;
+}
+
+[titulo*="tu"] { /* Totos as tas com atributo titulo e que contém com "tu"  */
+  text-transform: uppercase;
+}

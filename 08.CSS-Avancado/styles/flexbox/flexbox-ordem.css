@@ -1,0 +1,27 @@
+.container {
+  display: flex; 
+
+  background-color: darkgrey;
+  height: 400px;
+  color: white;
+}
+
+.r1 {
+  order: 3;
+  background-color: red;
+}
+
+.r2 {
+  order: -1; /* 0 valor default */
+  background-color: blue;
+}
+
+.r3 {
+  order: 1;
+  background-color: green;
+}
+
+.rect {
+  width: 150px;
+  height: 100px;
+}
