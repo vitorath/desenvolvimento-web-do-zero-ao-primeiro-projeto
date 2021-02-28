@@ -1,0 +1,116 @@
+<!--
+  Página para consultas 
+    https://www.w3schools.com/ 
+  
+  Tags no mesmo nível são irmãs, no caso head e body são irmãs e filhas da tag html
+-->
+<!DOCTYPE html> <!-- Versão 5 do HTML -->
+<html>
+  <head>
+    <meta charset="utf-8" /> <!-- Setar o tipo de codificação utf-8 -->
+    <title>Minha primeira página</title>
+  </head>
+
+  <body>
+    <!-- Um página deve ter apenas um título H1 por página e depois os títulos nas sequência -->
+    <!-- Títulos 1 (mais prioritário) até 6 (menos prioritário) -->
+    <!-- H<n> pula uma linha após o uso -->
+    <h1>Titulo 1</h1> 
+    <h2>Titulo 2 - Sub-título</h2>
+    <h3>Titulo 3</h3>
+    <h4>Titulo 4</h4>
+    <h5>Titulo 5</h5>
+    <h6>Titulo 6</h6>
+
+    <p>It is a long established fact that a reader will be distracted by the readable 
+      content of a page when looking at its layout. The point of using Lorem Ipsum is 
+      that it has a more-or-less normal distribution of letters, as opposed to using 
+      'Content here, content here', making it look like readable English. Many desktop 
+      publishing packages and web page editors now use Lorem Ipsum as their default model 
+      text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+      Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
+      (injected humour and the like).</p>
+
+
+    <!-- Negrito -->
+    <!-- b (Bold) VS strong. O strong sinaliza que o texto é mais importante nos mecaniscmos de busca  -->
+    <p>Esse é um <b>texto em negrito</b></p>
+    <p>Esse é um <strog>texto em negrito</strog></p>
+
+
+    <!-- Itálico -->
+    <!-- i (italic) VS em. O em sinaliza que o texto é mais importante nos mecaniscmos de busca  -->
+    <p>Esse é um <i>texto em itálico</i></p>
+    <p>Esse é um <em>texto em itálico</em></p>
+
+    <!-- Marcar -->
+    <p>Esse é um <mark>texto com marcação</mark></p>
+
+    <!-- Diminue o tamanho do texto -->
+    <p>Esse é um <small>texto com tag small</small></p>
+
+    <!-- Riscar o texto -->
+    <!-- s VS del. O del sinaliza que o texto é mais importante nos mecaniscmos de busca  -->
+    <p>Esse é um <s>texto que foi removido</s> e substituido por este</p>
+    <p>Esse é um <del>texto que foi removido</del> e substituido por este</p>
+
+    <!-- Sublinhar -->
+    <!-- u VS ins. O ins sinaliza que o texto é mais importante nos mecaniscmos de busca  -->
+    <p>Este é um <u>texto que foi inserido</u></p>
+    <p>Este é um <ins>texto que foi inserido</ins></p>
+
+    <p>Este é um <sub>texto subscript</sub></p>
+    <p>Este é um <sup>texto superscript</sup></p>
+
+    <a href="sobre.html">Sobre Programador Br</a>
+    <br/>
+
+    <!-- Google e softwares de leitura de tela identificam o que é a imagem pelo alt  -->
+    <img src="https://picsum.photos/200/300" alt="Imagem aleátória"/> 
+    <img src="images/3-200x300.jpg" alt="Imagem aleátória 2"/>
+    <br> 
+
+    <!-- Height e Width - alterar uma das dimensões mantem a proporção, já alterar ambas pode distorcer -->
+    <a href="https://picsum.photos/">
+      <img src="https://picsum.photos/200/300" alt="Imagem aleátória" height="300"/> 
+    </a>
+    <br>
+
+    <!-- Lista não ordenada -->
+    <h2>Lista de compras</h2>
+    <ul>
+      <li>Arrz</li>
+      <li>Feijão</li>
+      <li>Refrigerante</li>
+      <li>Suco</li>
+    </ul>
+
+    <!-- Lista ordenada -->
+    <h2>Ranking dos melhores vendedores</h2>
+    <ol>
+      <li>Marcos</li>
+      <li>João</li>
+      <li>Marcelo</li>
+    </ol>
+
+    <!-- Tabelas -->
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>E-mail</th>
+      </tr>
+      <tr>
+        <td>Vitor</td>
+        <td>99999-9999</td>
+        <td>vitor@test.com</td>
+      </tr>
+      <tr>
+        <td>Francis</td>
+        <td>99999-9998</td>
+        <td>francis@test.com</td>
+      </tr>
+    </table>
+    <br>
+  </body>
+</html>
