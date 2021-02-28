@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+.container {
+  max-width: 1040px;
+  margin: auto;
+}
+
+header {
+  background-color: #48C5C3;
+  text-align: center;
+  color: white;
+  padding: 8px;
+}
+
+.title {
+  font-size: 26px;
+}
+
+section {
+  padding: 24px;
+  background-image: url('../images/people.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+
+.formContainer {
+  max-width: 230px;
+  background-color: #FFFFFFBB;
+  padding: 24px;
+  float: right;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.mb {
+  margin-bottom: 16px;
+}
+
+input, select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: none;
+  margin-bottom: 8px;
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: #48C5C3;
+  font-weight: bold;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-image: url("../images/arrow.jpg");
+  background-repeat: no-repeat;
+
+  background-position: calc(100% - 10px) center;
+}
+
+.picture {
+  width: 160px;
+}
+
+footer {
+  background-color: #202121;
+  padding: 40px;
+  text-align: center;
+}
+
+.description {
+  display: inline-block;
+  text-align: left;
+  color: white;
+  max-width: 40%;
+  margin-left: 40px;
+}
+
+.description p, .description h3 {
+  margin-bottom: 24px;
+}
+
+.description h3 {
+  font-size: 24px;
+}
