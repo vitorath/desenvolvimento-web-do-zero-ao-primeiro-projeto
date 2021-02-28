@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Video</h1>
+  <!-- 
+      O autoplay, atributo para iniciar o video atutomaticamente.
+      Contudo, tem browsers que incia vídos automáricos somente no mudo
+      para isso é utilizado o atributo muted.
+      autoplay sobrescreve o preload, maior prioridade
+  -->
+  <video 
+    controls 
+    autoplay
+    muted
+    loop 
+    width="540" 
+    preload="none"
+    src="../assets/video.mp4"
+    poster="https://picsum.photos/seed/picsum/200/300"></video>
+  <script src="_video.js"></script>
+</body>
+</html>
