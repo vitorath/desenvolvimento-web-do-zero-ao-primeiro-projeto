@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px;
+  background-color: #3e3e3e;
+  color: white;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 25px;
+  list-style: none;
+}
