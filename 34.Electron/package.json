@@ -1,0 +1,13 @@
+{
+  "name": "34.Electron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "NODE_ENV=development electron ."
+  },
+  "devDependencies": {
+    "electron": "^11.2.3"
+  }
+}
