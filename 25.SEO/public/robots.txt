@@ -1,0 +1,10 @@
+User-agent: Googlebot
+Desallow:
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: *
+Desallow: /admin
+Desallow: /images
+Allow: /images/logo.png
