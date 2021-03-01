@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      box-sizing: border-box;
+      width: 500px;
+      background-color: gray;
+      padding: 8px;
+      border: 5px solid black;
+      margin: 16px;
+      color: white;
+
+      font-size: 20px;;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+
+  <script src="../jquery-3.5.1.min.js"></script>
+  <script>
+    const box = $(".box")
+
+    box.width(600); // Ignora o box sizing, funciona para os outros também da mesma forma
+
+    box
+      .append("largura: ", box.width(), "<br>")
+      .append("largura + padding: ", box.innerWidth(), "<br>")
+      .append("largura + padding + borda: ", box.outerWidth(), "<br>")
+      .append("largura + padding + borda + margin: ", box.outerWidth(true), "<br>")
+    
+  </script>
+</body>
+</html>

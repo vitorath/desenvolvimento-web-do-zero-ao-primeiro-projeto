@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <div id="div1" >Div 1</div>
+    <div id="div2" >Div 2</div>
+    <div id="div3" >Div 3</div>
+    <div id="div4" >Div 4</div>
+    <div id="div5" >Div 5</div>
+  </div>
+  <div>
+    <div id="div6" >Div 6</div>
+    <div id="div7" >Div 7</div>
+    <div id="div8" >Div 8</div>
+    <div id="div9" >Div 9</div>
+    <div id="div10" >Div 10</div>
+  </div>
+
+  <script src="../jquery-3.5.1.min.js"></script>
+  <script>
+    console.log($("#div3").siblings());
+    console.log($("#div3").siblings("#div4, #div5"));
+    console.log($("#div3").nextAll());
+    console.log($("#div3").nextAll("#div5"));
+    console.log($("#div3").next());
+    console.log($("#div3").prevAll());
+    console.log($("#div3").prev());
+    console.log($("#div1").nextUntil("#div4"));
+    console.log($("#div5").prevUntil("#div1"));
+  </script>
+</body>
+</html>
