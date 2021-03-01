@@ -1,0 +1,22 @@
+{
+  "name": "Recorder",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "NODE_ENV=development electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -c.mac.identity=null"
+  },
+  "build": {
+    "appId": "com.programadorbr.recorder",
+    "mac": {
+      "icon": "./assets/icon/icon.png"
+    }
+  },
+  "devDependencies": {
+    "electron": "^11.2.3",
+    "electron-builder": "^22.9.1"
+  }
+}

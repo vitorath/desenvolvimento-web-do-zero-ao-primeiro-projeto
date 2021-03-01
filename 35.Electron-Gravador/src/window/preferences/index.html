@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta 
+    http-equiv="Content-Security-Policy"
+    content="script-src 'self' 'unsafe-inline';"
+  />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles.css">
+  <title>Preferences</title>
+</head>
+<body>
+  <div class="container">
+    <div class="group">
+      <label for="destination-path">Destination</label>
+      <input id="destination-path" name="destination-path" type="text">
+      <button onclick="chooseFolder()">Choose</button>
+    </div>
+  </div>
+
+  <script>
+    const { ipcRenderer } = require('electron');
+
+    const destionationPath = document.querySelector('#destination-path');
+
+    ipcRenderer.on('destination-path-update', (event, destination) => {
+      destionationPath.value = destination;
+    });
+
+    function chooseFolder() {
+      ipcRenderer.invoke('show-dialog').then((destination) => {
+        destionationPath.value = destination;
+      });
+    }
+  </script>
+</body>
+</html>
